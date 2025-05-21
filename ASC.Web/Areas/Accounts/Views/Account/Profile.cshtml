@@ -33,14 +33,11 @@
 @section Scripts {
     <script>
         $(document).ready(function () {
-            // Handle Reset functionality
             $(document).on("click", ".reset", function () {
                 $('#fromUser')[0].reset();
                 $('.btnSubmit').text('Create');
             });
 
-            // Set hidden Email field to correct value from UI field
-            // This is required for
             $(document).on('click', '.btnSubmit', function () {
                 M.updateTextFields();
             });
